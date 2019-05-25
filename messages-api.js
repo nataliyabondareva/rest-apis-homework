@@ -9,7 +9,7 @@ app.get("/", (req, res) => res.redirect("/messages"));
 app.get("/messages", (req, res) => res.json({ data: messages }));
 let requestsCount = 0;
 app.post("/messages", (req, res) => {
-  // logs body text if available
+  // logs body text if provided
   if (req.body.text && requestsCount < 6) {
     requestsCount = +1;
     console.log(req.body.text);
