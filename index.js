@@ -19,7 +19,7 @@ app.post("/messages", (req, res) => {
     });
   } else if (requestsCount >= 6) {
     res.status(500).json({
-      message: "Whoops! Internal server error"
+      message: "Whoops! 500: Internal server error"
     });
   }
 });
