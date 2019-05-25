@@ -5,9 +5,6 @@ const pool = new Pool({
 
 pool
   .connect()
-  .then(() => {
-    console.log("Connection to postgres established!");
-  })
   .then(() =>
     pool.query(
       "CREATE TABLE IF NOT EXISTS person (id serial, first_name varchar(255), last_name varchar(255), eye_color varchar(255))"

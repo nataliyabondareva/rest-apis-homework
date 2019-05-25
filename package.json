@@ -12,5 +12,15 @@
     "express": "^4.17.0",
     "pg": "^6.4.2",
     "sequelize": "^5.8.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tallybee/rest-apis-homework.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/tallybee/rest-apis-homework/issues"
+  },
+  "homepage": "https://github.com/tallybee/rest-apis-homework#readme"
 }
