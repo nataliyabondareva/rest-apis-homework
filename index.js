@@ -11,17 +11,13 @@ let requestsCount = 0;
 app.post("/messages", (req, res) => {
   if (req.body.text && requestsCount < 6) {
     requestsCount = +1;
-    console.log("reqconnt", requestsCount);
     console.log(req.body.text);
   } else if (!req.body.text && requestsCount < 6) {
-    console.log("reqconnt", requestsCount);
     requestsCount = +1;
     res.status(400).json({
       message: "Oh no! 400: Bad Request"
     });
   } else if (requestsCount >= 6) {
-    console.log("reqconnt", requestsCount);
-    console.log("stop!");
     res.status(500).json({
       message: "Whoops! Internal server error"
     });
